@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+<head>
+</html>
+
+<div class="wrapper" id="formWrapper">
+    <!-- Login Form -->
+<div> class="form-container login">
+    <h2>Login</h2>
+    <form>
+        <input type="email" placeholder="Emaill, username..." required />
+        <input type="password" placeholder="Password" required />
+        <div class="forgot-password" tabindex="0">Forgot password</div>
+        <button type="sumbit" class="'sumbit-btn">Login</button>
+        <div class="social-login">
+            <div class="social-btn google" title="Sign in with Google" role="button" tabindex="0"
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+             </svg>
+            </div>
+            <div class="social-btn Github" title="Sign in with GitHub" role="button" tabindex="0">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                </svg>
+            </div>
+            <div class="social-btn X" title="Sign in with X" role="button" tabindex="0">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                </svg>
+            </div>
+
+        </div>
+      </form>
+    </div>
+    
+    <!-- Sign Up Form -->
+    <div class="form-container sign-up">
+        <h2>Sign Up</h2>
+        <form>
+            <input type="text" placeholder="username" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="password" placeholder="Confirmed Password" required />Sign Up</button>
+
+            <label class="accept-terms">
+                <input type="checkbox" required /> I Accept the terms & conditions
+            </label>
+            <button type="sumbit" class="sumbit-btn"> Sign up</button>
+            <div class="social-login">
+                <div class="social-btn google" title="Sign up with Google" role="button" tabindex="0">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    </svg>
+                <div class="social-btn Github" title="Sign up with GitHub" role="button" tabindex="0">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    </svg>
+                <div class="social-btn X" title="Sign in with X" role="button" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currrentColor" viewBox="0 0 1200 1227">
+                    </svg>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Right Side Toogle-->
+     <div class="toggle-container">
+        <h2 id="toggleHeading">Don't have an Account?</h2>
+        <p id="toogleText">Sign up to get Started!</p>
+        <button class="switch-btn" id="toggleBtn">Sign Up</button>
+     </div>
+    </div
+
+    <script>
+        const wrapper = document.getElementById('formWarapper');
+        const toggleBtn = document.getElementById('toggleBtn');
+        const toggleHeading = document.getElementById('toggleHeading');
+        const toggleText = document.getElementById('toogleText');
+
+        toggleBtn.addEventListener('click', () => {
+            wrapper.classList.toggle('active');
+            if (wrapper.classList.contains('active')) {
+                toggleHeading.textContent = 'Already have an Account?';
+                toggleText.textContent = 'Login to your account';
+                toggleBtn.textContent = 'Login';
+            } else {
+                toggleHeading.textContent = "Don't have an Account?";
+                toggleText.textContent = 'Sign up to get Started!';
+                toggleBtn.textContent = 'Sign Up';
+            }
+        });
+    </script>
+
+    </body>
+    </form>
+    <html>
